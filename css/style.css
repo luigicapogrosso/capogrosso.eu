@@ -1,0 +1,106 @@
+body {
+    margin: auto;
+    padding: 1em;
+    color: #666;
+    font-size: 12pt;
+    max-width: 800px;
+    line-height: 1.6;
+    font-family: "Lato";
+    text-align: justify;
+}
+
+footer {
+    text-align: center;
+    padding-top: 3px;
+}
+
+hr {
+    color: #ddd;
+    border-style: dashed;
+}
+
+a {
+    color: #292c33;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    color: #292c33;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding-left: 1.2em;
+}
+
+div.personal {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 1.4em;
+    grid-auto-flow: dense;
+}
+
+div.personal>div:nth-child(1) {
+    grid-column: 2;
+    text-align: center;
+    padding-top: 1.5em;
+}
+
+@media only screen and (max-width: 600px) {
+    div.personal {
+        display: block;
+    }
+
+    div.personal>div:nth-child(1) {
+        padding: 0;
+    }
+}
+
+div.myphoto {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    background: url(../img/me.jpeg) no-repeat center;
+    background-size: 180px;
+}
+
+.social {
+    display: block;
+    font-size: 1em;
+}
+
+.social a {
+    color: #292c33;
+}
+
+.social a:hover {
+    color: #f36;
+    background-color: #fff;
+}
+
+.panel {
+    display: block;
+    font-size: 0.9em;
+    margin: 0 0 1em 0;
+}
+
+.panel {
+    border: 1px solid #292c33;
+    border-radius: 4px;
+    background: #F7F7F7;
+    padding: 2px 7px;
+}
+
+.panel>h2 {
+    color: #f8cf5f;
+    padding: 2px 7px;
+    margin: -2px -7px 0.3em -7px;
+    background: #292c33;
+    font-size: 1.2em;
+}
