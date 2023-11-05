@@ -20,7 +20,7 @@ hr {
 }
 
 a {
-    color: #292c33;
+    color: #f36;
     text-decoration: none;
 }
 
@@ -63,9 +63,9 @@ div.personal>div:nth-child(1) {
 
 div.myphoto {
     display: inline-block;
-    width: 150px;
-    height: 150px;
-    border-radius: 75px;
+    width: 175px;
+    height: 175px;
+    border-radius: 100px;
     background: url(../img/me.jpeg) no-repeat center;
     background-size: 180px;
 }
