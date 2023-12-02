@@ -20,7 +20,7 @@ hr {
 }
 
 a {
-    color: #f36;
+    color: #043cbe;
     text-decoration: none;
 }
 
@@ -80,8 +80,8 @@ div.myphoto {
 }
 
 .social a:hover {
-    color: #f36;
-    background-color: #fff;
+    color: #043cbe;
+    background-color: #f7f7f7;
 }
 
 .panel {
@@ -93,12 +93,12 @@ div.myphoto {
 .panel {
     border: 1px solid #292c33;
     border-radius: 4px;
-    background: #F7F7F7;
+    background: #f7f7f7;
     padding: 2px 7px;
 }
 
 .panel>h2 {
-    color: #f8cf5f;
+    color: #f7f7f7;
     padding: 2px 7px;
     margin: -2px -7px 0.3em -7px;
     background: #292c33;
