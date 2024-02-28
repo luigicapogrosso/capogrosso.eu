@@ -36,6 +36,7 @@ ul,
 ol {
     margin: 0;
     padding-left: 1.2em;
+    list-style-type: none;
 }
 
 div.personal {
@@ -103,4 +104,8 @@ div.myphoto {
     margin: -2px -7px 0.3em -7px;
     background: #292c33;
     font-size: 1.2em;
+}
+
+.b_title {
+    color: #292c33;
 }
