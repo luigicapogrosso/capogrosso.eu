@@ -70,6 +70,7 @@ div.myphoto {
     display: inline-block;
     width: 175px;
     height: 175px;
+    border: 2px solid;
     border-radius: 100px;
     background: url(../img/me.JPEG) no-repeat center;
     background-size: 180px;
@@ -112,4 +113,18 @@ div.myphoto {
 
 .b_title {
     color: #292c33;
+}
+
+.reviewer_ul {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.reviewer_li {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
