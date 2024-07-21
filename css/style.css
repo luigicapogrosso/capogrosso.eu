@@ -71,6 +71,7 @@ div.myphoto {
     width: 175px;
     height: 175px;
     border: 2px solid;
+    border-color: #292c33;
     border-radius: 100px;
     background: url(../img/me.JPEG) no-repeat center;
     background-size: 180px;
