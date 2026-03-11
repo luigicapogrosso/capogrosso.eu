@@ -1,73 +1,59 @@
 # Git Standards
 
-This document defines the guidelines for code versioning and management. The goal is to maintain a clean, readable, and easily traceable history for all team members.
+This document defines the guidelines for code versioning and management.
+The goal is to maintain a clean, readable, and easily traceable history for all team members.
 
----
 
-## 1. Commit Message Standards
+## Commit Message Structure
 
-We adopt the **Conventional Commits** specification. This format makes the history readable for both humans and automation tools.
+We adopt the [**Conventional Commits**](https://www.conventionalcommits.org/) specification to ensure a clean, readable, and machine-parsable commit history.
 
-### Message Structure
-
-Every commit must follow this structure:
+Every commit message must follow this format:
 
 ```
 <type>: <subject>
-
-[optional body]
-
-[optional footer(s)]
 ```
 
-### Grammar Rules
+- **Subject line:** maximum 72 characters, lowercase start, no trailing period.
 
-- **Language:** English (International Standard).
-- **Imperative Mood:** Use the imperative present tense ("Add" not "Added", "Fix" not "Fixed"). *Example: "Add new filter component"* (It is as if you are telling the codebase: "do this").
-- **Capitalization:** The first letter of the `subject` should be lowercase (optional, but recommended for consistency).
-- **Punctuation:** Do not end the `subject` line with a period.
+## Grammar Rules
 
-### Commit Types
+| Rule            | Standard                                                                                                           |
+| --------------- | ------------------------------------------------------------------------------------------------------------------ |
+| Language        | English (International Standard).                                                                                  |
+| Tense and Mood  | **Imperative present tense** — write as if you are commanding the codebase (e.g., "add", "fix", "remove").         |
+| Capitalization  | The first letter of the subject must be **lowercase**.                                                             |
+| Punctuation     | Do **not** end the subject line with a period.                                                                     |
 
-- `feat`: A new feature for the user.
-- `fix`: A bug fix.
-- `docs`: Documentation only changes.
-- `style`: Formatting, missing semi-colons, etc. (no code change).
-- `refactor`: A code change that neither fixes a bug nor adds a feature (structural improvement).
-- `test`: Adding missing tests or correcting existing tests.
+## Commit Types
 
-### Examples
+| Type       | Description                                                                                     |
+| ---------- | ----------------------------------------------------------------------------------------------- |
+| `feat`     | A new feature visible to the end user.                                                          |
+| `fix`      | A bug fix that corrects incorrect behavior.                                                     |
+| `docs`     | Changes to documentation only (README, comments, etc.).                                         |
+| `style`    | Code formatting, whitespace, or cosmetic changes that do **not** affect functionality.          |
+| `refactor` | A code change that neither fixes a bug nor adds a feature (e.g., restructuring, renaming).      |
+| `test`     | Adding, updating, or correcting tests.                                                          |
 
-> ✅ **Correct:** `feat: add google oauth` or `fix: resolve overlapping items on mobile`
->
+## Examples
 
-> ❌ **Incorrect:** `Added login (Missing type and uses past tense)` or `Fixed bug (Too vague)`
->
+**Correct:**
 
----
+```
+feat: add publications section to homepage
+fix: resolve navbar overlap on mobile viewports
+docs: update README with deployment instructions
+style: align indentation in index.html
+refactor: extract hero section into reusable block
+chore: add .editorconfig for consistent formatting
+```
 
-## 2. Branch Naming Standards
+**Incorrect:**
 
-Branch names must be descriptive and follow a specific hierarchy to facilitate filtering and sorting.
-
-### Branch Format
-
-`category/ticket-id-short-description`
-
-### Grammar Rules
-
-- **Separator:** Always use hyphens  (kebab-case), never underscores `_` or spaces.
-- **Lowercase:** The entire branch name must be lowercase.
-
-### Branch Categories
-
-1. `feature/`: Development of new features.
-    - *Ex:* `feature/PROJ-101-user-profile-page`
-2. `bugfix/` (or `fix/`): Bug corrections during a sprint.
-    - *Ex:* `bugfix/PROJ-102-calendar-date-picker`
-3. `hotfix/`: Urgent fixes to be applied directly to production (master/main).
-    - *Ex:* `hotfix/security-patch-v1`
-4. `release/`: Preparation for a new version release.
-    - *Ex:* `release/v1.2.0`
-5. `chore/`: Technical maintenance (library updates, config).
-    - *Ex:* `chore/update-react-version`
+```
+Added login                → Missing type prefix; uses past tense.
+Fixed bug                  → Too vague; uses past tense.
+feat: Add new section.     → Subject starts with uppercase; ends with a period.
+update stuff               → No type prefix; non-descriptive subject.
+```
