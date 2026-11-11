@@ -1,714 +1,551 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <!-- Required meta tags -->
-        <meta name="description"
-            content="Personal website of Luigi Capogrosso, Ph.D. in Artificial Intelligence.">
-        <meta property="og:title" content="Luigi Capogrosso - Ph.D. in AI">
-        <meta property="og:type" content="website">
-        <meta name="keywords" content="Luigi, Capogrosso, PhD, AI, PoliTO, UniVR">
-        <meta name="robots" content="index, follow">
-        <meta name="author" content="Luigi Capogrosso">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="google-site-verification" content="3ne_mrqjaHCIT9yOTNvKHwHUwrk5Z-ct1mEUDhUcRWw" />
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Styles -->
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-        <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js"
-            integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous">
-        </script>
+    <title>Luigi Capogrosso — Postdoctoral Researcher in AI</title>
+    <meta name="description" content="Luigi Capogrosso, Postdoctoral Researcher at the Interdisciplinary Transformation University of Austria (IT:U). Efficient machine learning, TinyML, and learning-enabled cyber-physical systems.">
+    <meta name="keywords" content="Luigi Capogrosso, PhD, AI, TinyML, efficient machine learning, IT:U, PoliTO, UniVR">
+    <meta name="author" content="Luigi Capogrosso">
+    <meta name="robots" content="index, follow">
+    <meta name="google-site-verification" content="3ne_mrqjaHCIT9yOTNvKHwHUwrk5Z-ct1mEUDhUcRWw">
+    <link rel="canonical" href="https://www.capogrosso.eu/">
 
-        <title>Luigi Capogrosso - Ph.D. in AI</title>
-    </head>
+    <!-- Link previews (LinkedIn, Slack, WhatsApp, ...) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.capogrosso.eu/">
+    <meta property="og:title" content="Luigi Capogrosso — Postdoctoral Researcher in AI">
+    <meta property="og:description" content="Efficient machine learning for embedded and cyber-physical systems.">
+    <meta property="og:image" content="https://www.capogrosso.eu/img/portrait.jpg">
 
-    <body>
-        <nav>
-            <hr />
-        </nav>
+    <!-- Favicon: "LC" on a lilac circle, written inline so no extra file is needed -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23ebe5f8'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Georgia,serif' font-size='28' font-weight='600' fill='%235b4a9e'%3ELC%3C/text%3E%3C/svg%3E">
 
-        <h1>Luigi Capogrosso</h1>
+    <!-- Fonts: Inter (text) and Source Serif 4 (headings) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
 
-        <!-- Personal -->
-        <div class="personal">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!--
+        Icons, defined once and reused with:  <svg class="icon"><use href="#icon-name"/></svg>
+        Sources: Google Scholar and GitHub from Simple Icons (CC0), LinkedIn from Font Awesome Free (CC BY 4.0),
+        the others from Lucide (ISC).
+    -->
+    <svg width="0" height="0" style="position: absolute;" aria-hidden="true">
+        <symbol id="icon-scholar" viewBox="0 0 24 24">
+            <path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/>
+        </symbol>
+        <symbol id="icon-github" viewBox="0 0 24 24">
+            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+        </symbol>
+        <symbol id="icon-linkedin" viewBox="0 0 448 512">
+            <path d="M100.3 448l-92.9 0 0-299.1 92.9 0 0 299.1zM53.8 108.1C24.1 108.1 0 83.5 0 53.8 0 39.5 5.7 25.9 15.8 15.8s23.8-15.8 38-15.8 27.9 5.7 38 15.8 15.8 23.8 15.8 38c0 29.7-24.1 54.3-53.8 54.3zM447.9 448l-92.7 0 0-145.6c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7l0 148.1-92.8 0 0-299.1 89.1 0 0 40.8 1.3 0c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3l0 164.3-.1 0z"/>
+        </symbol>
+        <symbol id="icon-cv" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/>
+            <path d="M14 2v5a1 1 0 0 0 1 1h5"/>
+            <path d="M16 13H8"/>
+            <path d="M16 17H8"/>
+            <path d="M10 9H8"/>
+        </symbol>
+        <symbol id="icon-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/>
+            <rect x="2" y="4" width="20" height="16" rx="2"/>
+        </symbol>
+        <symbol id="icon-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/>
+            <circle cx="12" cy="10" r="3"/>
+        </symbol>
+    </svg>
+
+
+    <!-- ================================================================== -->
+    <!-- TOP BAR: sticky menu. Each link points to the id of a <section>.   -->
+    <!-- ================================================================== -->
+    <header class="topbar">
+        <div class="container">
+            <a class="topbar-name" href="#top">Luigi Capogrosso</a>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#news">News</a>
+                <a href="#publications">Publications</a>
+                <a href="#teaching">Teaching</a>
+                <a href="#service">Service</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+
+    <main class="container" id="top">
+
+        <!-- ============================================================== -->
+        <!-- HERO: name, role, one-line summary, profile links, photo       -->
+        <!-- ============================================================== -->
+        <div class="hero">
             <div>
-                <div class="myphoto"></div>
-                <span class="social">
-                    <a target="_blank" href="https://scholar.google.it/citations?hl=it&user=sVTnbPYAAAAJ" aria-label="My Google Scholar profile">
-                        <i class="ai ai-lg ai-google-scholar-square" aria-hidden="true" style="font-size: 2em; padding-right: 3px;"></i>
+                <h1>Luigi Capogrosso</h1>
+
+                <p class="hero-role">
+                    Postdoctoral Researcher · <a href="https://it-u.at/en/" target="_blank">IT:U</a>, Linz, Austria
+                </p>
+
+                <p class="hero-summary">
+                    I work on efficient machine learning for embedded and cyber-physical systems,
+                    bringing learning to devices with tight compute and energy budgets.
+                </p>
+
+                <div class="hero-links">
+                    <a class="button button-dark" href="docs/luigi_capogrosso_cv.pdf" target="_blank">
+                        <svg class="icon"><use href="#icon-cv"/></svg> CV
                     </a>
-                    <a target="_blank" href="https://github.com/luigicapogrosso" aria-label="My GitHub profile">
-                        <i class="fab fa-github fa-lg" aria-hidden="true" style="font-size: 2em; padding-right: 2px; padding-left: 2px;"></i>
+                    <a class="button" href="https://scholar.google.it/citations?hl=it&user=sVTnbPYAAAAJ" target="_blank">
+                        <svg class="icon"><use href="#icon-scholar"/></svg> Google Scholar
                     </a>
-                    <a target="_blank" href="https://www.linkedin.com/in/luigi-capogrosso-a7bb18182" aria-label="My LinkedIn profile">
-                        <i class="fab fa-linkedin fa-lg" aria-hidden="true" style="font-size: 2em; padding-left: 3px;"></i>
+                    <a class="button" href="https://github.com/luigicapogrosso" target="_blank">
+                        <svg class="icon"><use href="#icon-github"/></svg> GitHub
                     </a>
-                </span>
-                <span>
-                    [<a target="_blank" href="docs/luigi_capogrosso_cv.pdf">Download my CV</a>]
-                </span>
+                    <a class="button" href="https://www.linkedin.com/in/luigi-capogrosso-a7bb18182" target="_blank">
+                        <svg class="icon"><use href="#icon-linkedin"/></svg> LinkedIn
+                    </a>
+                </div>
             </div>
-            <div>
-                <p>
-                    I am a Postdoctoral Researcher at the <b><a target="_blank" href="https://it-u.at/en/">Interdisciplinary Transformation University of Austria (IT:U)</a></b>,
-                    advised by Prof. <b><a target="_blank" href="https://ee.ethz.ch/the-department/people-a-z/person-detail.michele-magno.html">Michele Magno</a></b>.
-                    <br>
-                    I did my <b><a target="_blank" href="https://www.phd-ai.it/en/359-2/">Ph.D. in Artificial Intelligence</a></b> (<i>Cum Laude</i>) at the
-                    <b><a target="_blank" href="https://www.polito.it/index.php?lang=en">Polytechnic of Turin</a></b> in collaboration with the
-                    University of Verona under the supervision of Prof. <b><a target="_blank" href="https://www.dimi.univr.it/?ent=persona&id=218&lang=en">Marco Cristani</a></b>
-                    and Prof. <b><a target="_blank" href="https://www.dimi.univr.it/?ent=persona&id=59&lang=en">Franco Fummi</a></b>.
-                    <br>
-                    I received my B.Sc. (2019) and M.Sc. (2021) at the <b><a target="_blank" href="https://www.univr.it/en/home">University of Verona</a></b>
-                    in Computer Science and Computer Engineering for Robotics and Smart Industry, respectively.
-                    <br>
-                    I had the privilege of being a visiting scholar at the
-                    <b><a target="_blank" href="https://tecnico.ulisboa.pt/en">Instituto Superior Técnico</a></b>, working with
-                    Prof. <b><a target="_blank" href="http://www.lx.it.pt/~mtf/">Mário A. T. Figueiredo</a></b>.
-                </p>
-                <p>
-                    My research interests cover the broad area of learning, and the main topics I am currently working on can be
-                    grouped into the classes of efficient machine learning, learning-enabled cyber-physical systems, and representation learning.
-                </p>
-                <p>
-                    I am an <b><a target="_blank" href="https://www.altamatematica.it">Istituto Nazionale di Alta Matematica</a></b> member
-                    within the <b><a target="_blank" href="https://www.altamatematica.it/gncs/">Gruppo Nazionale per il Calcolo Scientifico (GNCS)</a></b>.
-                    I am also an <b><a target="_blank" href="https://www.ieee.org/membership/index.html">IEEE</a></b> and
-                    <b><a target="_blank" href="https://www.thecvf.com">Computer Vision Foundation (CVF)</a></b> member.
-                </p>
-            </div>
+
+            <img class="hero-photo" src="img/portrait.jpg" width="180" height="180" alt="Portrait of Luigi Capogrosso">
         </div>
 
-        <!-- Selected Publications -->
-        <div class="panel">
-            <h2> 📚 Selected Publications</h2>
-            <ul>
-                <li>
-                    <p style="line-height:17px;">
-                        <b class="b_title">
-                            Performance Analysis of Edge and In-Sensor AI Processors: A Comparative Review
-                        </b>
-                        <br>
-                        <span style="font-size:90%">
-                            <b>L Capogrosso</b>, P Bonazzi, M Magno
-                        </span>
-                        <br>
-                        <span style="font-size:90%">2026, International Instrumentation and Measurement Technology Conference (I2MTC)</span>
-                        <br>
-                        <span style="font-size:90%">
-                            [proceedings]
-                            [<a target="_blank" href="https://arxiv.org/abs/2603.08725">open access</a>]
-                        </span>
-                    </p>
-                </li>
-                <!-- <li>
-                    <p style="line-height:17px;">
-                        <b class="b_title">
-                            KairosAD: A SAM-Based Model for Industrial Anomaly Detection on Embedded Devices
-                        </b>
-                        <br>
-                        <span style="font-size:90%">
-                            U Khan, F Fummi, <b>L Capogrosso</b>
-                        </span>
-                        <br>
-                        <span style="font-size:90%">2025, International Conference on Image Analysis and Processing (ICIAP)</span>
-                        <br>
-                        <span style="font-size:90%">
-                            [<a target="_blank" href="https://link.springer.com/chapter/10.1007/978-3-032-10185-3_4">proceedings</a>]
-                            [<a target="_blank" href="https://arxiv.org/abs/2505.24334">open access</a>]
-                            [<a target="_blank" href="https://github.com/intelligolabs/KairosAD">code</a>]
-                            [<a target="_blank" href="intelligolabs.github.io/KairosAD/">website</a>]
-                        </span>
-                    </p>
-                </li> -->
-                <li>
-                    <p style="line-height:17px;">
-                        <b class="b_title">
-                            A Comprehensive Survey on Deep Learning-based Predictive Maintenance
-                        </b>
-                        <br>
-                        <span style="font-size:90%">
-                            U Khan, D Cheng, F Setti, F Fummi, M Cristani, <b>L Capogrosso</b>
-                        </span>
-                        <br>
-                        <span style="font-size:90%">2026, ACM Transactions on Embedded Computing Systems</span>
-                        <br>
-                        <span style="font-size:90%">
-                            [<a target="_blank" href="https://dl.acm.org/doi/abs/10.1145/3732287">proceedings</a>]
-                        </span>
-                    </p>
-                </li>
-                <li>
-                    <p style="line-height:17px;">
-                        <b class="b_title">
-                            LO-SC: Local-only Split Computing for Accurate Deep Learning on Edge Devices
-                        </b>
-                        <br>
-                        <span style="font-size:90%">
-                            <b>L Capogrosso</b>, E Fraccaroli, M Cristani, F Fummi, S Chakraborty
-                        </span>
-                        <br>
-                        <span style="font-size:90%">2025, International Conference on VLSI Design (VLSID)</span>
-                        <br>
-                        <span style="font-size:90%">
-                            [<a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/10900702">proceedings</a>]
-                            [<a target="_blank" href="https://iris.univr.it/bitstream/11562/1156847/1/OPEN_2024_VLSID_LO_SC_Local_only_Split_Computing_for_Accurate_Deep_Learning_on_Edge_Devices.pdf">open access</a>]
-                            [<a target="_blank" href="https://github.com/intelligolabs/LO-SC">code</a>]
-                            [<a target="_blank" href="https://intelligolabs.github.io/LO-SC/">website</a>]
-                        </span>
-                    </p>
-                </li>
-                <!-- <li>
-                    <p style="line-height:17px;">
-                        <b class="b_title">
-                            SITUATE: Indoor Human Trajectory Prediction through Geometric Features and Self-Supervised Vision Representation
-                        </b>
-                        <br>
-                        <span style="font-size:90%">
-                            <b>L Capogrosso</b>, A Toaiari, A Avogaro, U Khan, A Jivoji, F Fummi, M Cristani
-                        </span>
-                        <br>
-                        <span style="font-size:90%">2024, International Conference on Pattern Recognition (ICPR)</span>
-                        <br>
-                        <span style="font-size:90%">
-                            [<a target="_blank" href="https://link.springer.com/chapter/10.1007/978-3-031-78444-6_24">proceedings</a>]
-                            [<a target="_blank" href="https://arxiv.org/abs/2409.00774">open access</a>]
-                            [<a target="_blank" href="https://github.com/intelligolabs/SITUATE">code</a>]
-                            [<a target="_blank" href="https://intelligolabs.github.io/SITUATE/">website</a>]
-                        </span>
-                    </p>
-                </li> -->
-                <!-- <li>
-                    <p style="line-height:17px;">
-                        <b class="b_title">
-                            Leveraging Latent Diffusion Models for Training-Free In-Distribution Data Augmentation for Surface Defect Detection
-                        </b>
-                        <br>
-                        <span style="font-size:90%">
-                            F Girella, Z Liu, F Fummi, F Setti, M Cristani, <b>L Capogrosso</b>
-                        </span>
-                        <br>
-                        <span style="font-size:90%">2024, International Conference on Content-Based Multimedia Indexing (CBMI)</span>
-                        <br>
-                        <span style="font-size:90%">
-                            [<a target="_blank" href="https://ieeexplore.ieee.org/document/10858875">proceedings</a>]
-                            [<a target="_blank" href="https://arxiv.org/abs/2407.03961">open access</a>]
-                            [<a target="_blank" href="https://github.com/intelligolabs/DIAG">code</a>]
-                            [<a target="_blank" href="https://intelligolabs.github.io/DIAG/">website</a>]
-                        </span>
-                    </p>
-                </li> -->
-                <li>
-                    <p style="line-height:17px;">
-                        <b class="b_title">
-                            MTL-Split: Multi-Task Learning for Edge Devices using Split Computing
-                        </b>
-                        <br>
-                        <span style="font-size:90%">
-                            <b>L Capogrosso</b>, E Fraccaroli, S Chakraborty, F Fummi, M Cristani
-                        </span>
-                        <br>
-                        <span style="font-size:90%">2024, Design Automation Conference (DAC)</span>
-                        <br>
-                        <span style="font-size:90%">
-                            [<a target="_blank" href="https://dl.acm.org/doi/abs/10.1145/3649329.3655686">proceedings</a>]
-                            [<a target="_blank" href="https://arxiv.org/abs/2407.05982">open access</a>]
-                            [<a target="_blank" href="https://github.com/intelligolabs/MTL-Split">code</a>]
-                            [<a target="_blank" href="https://intelligolabs.github.io/MTL-Split/">website</a>]
-                        </span>
-                    </p>
-                </li>
-                <li>
-                    <p style="line-height:17px;">
-                        <b class="b_title">
-                            A Machine Learning-oriented Survey on Tiny Machine Learning
-                        </b>
-                        <br>
-                        <span style="font-size:90%">
-                            <b>L Capogrosso</b>, F Cunico, DS Cheng, F Fummi, M Cristani
-                        </span>
-                        <br>
-                        <span style="font-size:90%">2024, IEEE Access</span>
-                        <br>
-                        <span style="font-size:90%">
-                            [<a target="_blank" href="https://ieeexplore.ieee.org/document/10433185">proceedings</a>]
-                            [<a target="_blank" href="https://arxiv.org/abs/2309.11932">open access</a>]
-                        </span>
-                    </p>
-                </li>
-                <!-- <li>
-                    <p style="line-height:17px;">
-                        <b class="b_title">
-                            Diffusion-based Image Generation for In-distribution Data Augmentation in Surface Defect Detection
-                        </b>
-                        <br>
-                        <span style="font-size:90%">
-                            <b>L Capogrosso</b>, F Girella, F Taioli, M Dalla Chiara, M Aqeel, F Fummi, F Setti, M Cristani
-                        </span>
-                        <br>
-                        <span style="font-size:90%">2024, International Conference on Computer Vision Theory and Applications (VISAPP)</span>
-                        <br>
-                        <span style="font-size:90%">
-                            [<a target="_blank" href="https://www.scitepress.org/Link.aspx?doi=10.5220/0012350400003660">proceedings</a>]
-                            [<a target="_blank" href="https://arxiv.org/abs/2406.00501">open access</a>]
-                            [<a target="_blank" href="https://github.com/intelligolabs/in_and_out">code</a>]
-                            [<a target="_blank" href="https://intelligolabs.github.io/in_and_out/">website</a>]
-                        </span>
-                    </p>
-                </li> -->
-                <!-- <li>
-                    <p style="line-height:17px;">
-                        <b class="b_title">
-                            Disentangled Latent Spaces Facilitate Data-Driven Auxiliary Learning
-                        </b>
-                        <br>
-                        <span style="font-size:90%">
-                            G Skenderi, <b>L Capogrosso</b>, A Toaiari, M Denitto, F Fummi, S Melzi, M Cristani
-                        </span>
-                        <br>
-                        <span style="font-size:90%">2024, Currently under review</span>
-                        <br>
-                        <span style="font-size:90%">
-                            [proceedings]
-                            [<a target="_blank" href="https://arxiv.org/abs/2310.09278">open access</a>]
-                            [code]
-                            [website]
-                            [<a target="_blank" href="https://github.com/intelligolabs/Detaux">code</a>]
-                            [<a target="_blank" href="https://intelligolabs.github.io/Detaux/">website</a>]
-                        </span>
-                    </p>
-                </li> -->
-                <!-- <li>
-                    <p style="line-height:17px;">
-                        <b class="b_title">
-                            Split-Et-Impera: A Framework for the Design of Distributed Deep Learning Applications
-                        </b>
-                        <br>
-                        <span style="font-size:90%">
-                            <b>L Capogrosso</b>, F Cunico, M Lora, M Cristani, F Fummi, D Quaglia
-                        </span>
-                        <br>
-                        <span style="font-size:90%">2023, Design and Diagnostics of Electronic Circuits and Systems (DDECS)</span>
-                        <br>
-                        <span style="font-size:90%">
-                            [<a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/10139711">proceedings</a>]
-                            [<a target="_blank" href="https://arxiv.org/abs/2303.12524">open access</a>]
-                            [<a target="_blank" href="https://github.com/luigicapogrosso/split_et_impera">code</a>]
-                            [<a target="_blank" href="https://luigicapogrosso.github.io/split_et_impera/">website</a>]
-                        </span>
-                    </p>
-                </li> -->
-                <!-- <li>
-                    <p style="line-height:17px;">
-                        <b class="b_title">
-                            HermesBDD: A Multi-Core and Multi-Platform Binary Decision Diagram Package
-                        </b>
-                        <br>
-                        <span style="font-size:90%">
-                            <b>L Capogrosso</b>, L Geretti, M Cristani, F Fummi, T Villa
-                        </span>
-                        <br>
-                        <span style="font-size:90%">2023, Design and Diagnostics of Electronic Circuits and Systems (DDECS)</span>
-                        <br>
-                        <span style="font-size:90%">
-                            [<a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/10139480">proceedings</a>]
-                            [<a target="_blank" href="https://arxiv.org/abs/2305.00039">open access</a>]
-                            [<a target="_blank" href="https://github.com/luigicapogrosso/HermesBDD">code</a>]
-                            [<a target="_blank" href="https://luigicapogrosso.github.io/HermesBDD/">website</a>]
-                        </span>
-                    </p>
-                </li> -->
-                <!-- <li>
-                    <p style="line-height:17px;">
-                        <b class="b_title">
-                            Towards Deep Learning-based Occupancy Detection Via WiFi Sensing in Unconstrained Environments
-                        </b>
-                        <br>
-                        <span style="font-size:90%">
-                            C Turetta, G Skenderi, <b>L Capogrosso</b>, F Demrozi, PH Kindt, A Masrur, F Fummi, M Cristani, G Pravadelli
-                        </span>
-                        <br>
-                        <span style="font-size:90%">2023, Design, Automation and Test in Europe Conference (DATE)</span>
-                        <br>
-                        <span style="font-size:90%">
-                            [<a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/10137260">proceedings</a>]
-                        </span>
-                    </p>
-                </li> -->
-                <!-- <li>
-                    <p style="line-height:17px;">
-                        <a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/10136924">
-                            The Post-pandemic Effects on IoT for Safety: The SAFE PLACE Project
-                        </a>
-                        <br>
-                        <span style="font-size:90%">
-                            F Cunico, <b>L Capogrosso</b>, A Castellini, F Setti, [...], A Farinelli, L Gamberini, M Cristani
-                        </span>
-                        <br>
-                        <span style="font-size:90%">2023 Design, Automation and Test in Europe Conference (DATE)</span>
-                    </p>
-                </li> -->
-                <!-- <li>
-                    <p style="line-height:17px;">
-                        <b class="b_title">
-                            I-SPLIT: Deep Network Interpretability for Split Computing
-                        </b>
-                        <br>
-                        <span style="font-size:90%">
-                            F Cunico, <b>L Capogrosso</b>, F Setti, D Carra, F Fummi, M Cristani
-                        </span>
-                        <br>
-                        <span style="font-size:90%">2022, International Conference on Pattern Recognition (ICPR)</span>
-                        <br>
-                        <span style="font-size:90%">
-                            [<a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/9956625">proceedings</a>]
-                            [<a target="_blank" href="https://arxiv.org/abs/2209.11607">open access</a>]
-                            [<a target="_blank" href="https://github.com/vips4/I-Split">code</a>]
-                            [<a target="_blank" href="https://vips4.github.io/I-Split/">website</a>]
-                        </span>
-                    </p>
-                </li> -->
-                <li>
-                    <p style="line-height:17px;">
-                        <b class="b_title">
-                            Check out all my other publications on <a target="_blank" href="https://scholar.google.it/citations?hl=it&user=sVTnbPYAAAAJ">Google Scholar</a>!
-                        </b>
-                    </p>
-                </li>
-            </ul>
-        </div>
 
-        <!-- Selected Reviewing Service -->
-        <div class="panel">
-            <h2> 📝 Selected Reviewing Services</h2>
-            <ul class="reviewer_ul">
-                <li class="reviewer_li">
-                    <h4>Journals</h4>
-                </li>
-                <ul class="reviewer_ul">
-                    <li class="reviewer_li">
-                        <p style="line-height:17px;">
-                            2026, <b class="b_title">IEEE Sensors Journal</b> - IEEE Inc.
-                        </p>
-                    </li>
-                    <li class="reviewer_li">
-                        <p style="line-height:17px;">
-                            2023 - Now, <b class="b_title">International Journal of Computer Vision</b> - Springer Netherlands
-                        </p>
-                    </li>
-                    <li class="reviewer_li">
-                        <p style="line-height:17px;">
-                            2023 - Now, <b class="b_title"> IEEE Internet of Things Journal</b> - IEEE Inc.
-                        </p>
-                    </li>
-                    <li class="reviewer_li">
-                        <p style="line-height:17px;">
-                            2023 - Now, <b class="b_title">Future Generation Computer Systems</b> - Elsevier B.V.
-                        </p>
-                    </li>
-                    <li class="reviewer_li">
-                        <p style="line-height:17px;">
-                            2022 - Now, <b class="b_title">Pattern Recognition</b> - Elsevier Ltd
-                        </p>
-                    </li>
-                </ul>
-            </ul>
-            <ul class="reviewer_ul">
-                <li class="reviewer_li">
-                    <h4>Conferences</h4>
-                </li>
-                <ul class="reviewer_ul">
-                    <li class="reviewer_li">
-                        <p style="line-height:17px;">
-                            2026, <b class="b_title">Conference on Neural Information Processing Systems (NeurIPS)</b> - NeurIPS Proceedings
-                        </p>
-                    </li>
-                    <li class="reviewer_li">
-                        <p style="line-height:17px;">
-                            2024 - Now, <b class="b_title">Computer Vision and Pattern Recognition Conference (CVPR)</b> - CVF/IEEE Inc.
-                        </p>
-                    </li>
-                    <li class="reviewer_li">
-                        <p style="line-height:17px;">
-                            2023 - Now, <b class="b_title">International Conference on Learning Representations (ICLR)</b> - OpenReview
-                        </p>
-                    </li>
-                    <li class="reviewer_li">
-                        <p style="line-height:17px;">
-                            2024 - Now, <b class="b_title">European Conference on Computer Vision (ECCV)</b> - Springer
-                        </p>
-                    </li>
-                    <!-- <li class="reviewer_li">
-                        <p style="line-height:17px;">
-                            2023 - Now, <b class="b_title">Design, Automation and Test in Europe Conference (DATE)</b> -- IEEE Inc.
-                        </p>
-                    </li> -->
-                </ul>
-            </ul>
-        </div>
+        <!-- ============================================================== -->
+        <!-- ABOUT                                                          -->
+        <!-- The class "highlight-*" sets the color of the heading marker.  -->
+        <!-- Options: lilac, peach, mint, butter, sky.                      -->
+        <!-- ============================================================== -->
+        <section id="about" class="highlight-lilac">
+            <h2>About</h2>
 
-        <!-- Honors & Awards -->
-        <div class="panel">
-            <h2> 🏆 Honors & Awards</h2>
-            <ul>
+            <p>
+                I am a Postdoctoral Researcher at the
+                <a href="https://it-u.at/en/" target="_blank">Interdisciplinary Transformation University of Austria (IT:U)</a>,
+                working with Prof. <a href="https://ee.ethz.ch/the-department/people-a-z/person-detail.michele-magno.html" target="_blank">Michele Magno</a>.
+            </p>
+
+            <p>
+                I received my <a href="https://www.phd-ai.it/en/359-2/" target="_blank">Ph.D. in Artificial Intelligence</a>
+                (<i>cum laude</i>) from the <a href="https://www.polito.it/index.php?lang=en" target="_blank">Polytechnic of Turin</a>,
+                in collaboration with the University of Verona, under the supervision of
+                Prof. <a href="https://www.dimi.univr.it/?ent=persona&id=218&lang=en" target="_blank">Marco Cristani</a> and
+                Prof. <a href="https://www.dimi.univr.it/?ent=persona&id=59&lang=en" target="_blank">Franco Fummi</a>.
+                During my Ph.D. I was a visiting scholar at the
+                <a href="https://tecnico.ulisboa.pt/en" target="_blank">Instituto Superior Técnico</a>, working with
+                Prof. <a href="http://www.lx.it.pt/~mtf/" target="_blank">Mário A. T. Figueiredo</a>.
+                Before that, I received my B.Sc. in Computer Science (2019) and my M.Sc. in Computer Engineering
+                for Robotics and Smart Industry (2021) from the <a href="https://www.univr.it/en/home" target="_blank">University of Verona</a>.
+            </p>
+
+            <p>
+                I am a member of the <a href="https://www.altamatematica.it" target="_blank">Istituto Nazionale di Alta Matematica</a>
+                (<a href="https://www.altamatematica.it/gncs/" target="_blank">GNCS</a>),
+                <a href="https://www.ieee.org/membership/index.html" target="_blank">IEEE</a>, and the
+                <a href="https://www.thecvf.com" target="_blank">Computer Vision Foundation (CVF)</a>.
+            </p>
+        </section>
+
+
+        <!-- ============================================================== -->
+        <!-- NEWS: newest first, max 4 items. Date format: "Mon YYYY".      -->
+        <!-- ============================================================== -->
+        <section id="news" class="highlight-butter">
+            <h2>News</h2>
+
+            <ul class="timeline">
                 <li>
-                    <p style="line-height:17px;">
-                        2026, <b class="b_title">Outstanding Reviewer</b> at the <a target="_blank" href="https://eccv.ecva.net/Conferences/2026/ProgramCommittee#outstanding-reviewer">19th European Conference on Computer Vision (ECCV)</a>
-                    </p>
+                    <span class="date">Sep 2026</span>
+                    <div>Recognized as <b>Outstanding Reviewer</b> at the European Conference on Computer Vision (ECCV).</div>
                 </li>
                 <li>
-                    <p style="line-height:17px;">
-                        2026, <b class="b_title">Best Paper Award</b> at the <a target="_blank" href="https://www.metroautomotive.org/">IEEE International Workshop on Metrology for Automotive</a>
-                    </p>
+                    <span class="date">Jun 2026</span>
+                    <div><b>Best Paper Award</b> at the IEEE International Workshop on Metrology for Automotive (MetroAutomotive).</div>
                 </li>
                 <li>
-                    <p style="line-height:17px;">
-                        2026, <b class="b_title">Ph.D. Outstanding Dissertation Award</b> assigned by the <a target="_blank" href="https://www.edaa.com/edaa-outstanding-dissertation-award/">European Design and Automation Association (EDAA)</a>
-                    </p>
+                    <span class="date">Apr 2026</span>
+                    <div>Received the <b>Ph.D. Outstanding Dissertation Award</b> from the European Design and Automation Association (EDAA).</div>
                 </li>
                 <li>
-                    <p style="line-height:17px;">
-                        2025, <b class="b_title">Outstanding Reviewer</b> at the <a target="_blank" href="https://cvpr.thecvf.com/Conferences/2025/ProgramCommittee#all-outstanding-reviewer">IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR)</a>
-                    </p>
-                </li>
-                <!-- <li>
-                    <p style="line-height:17px;">
-                        2023, <b class="b_title">Young Entrepreneur Prize</b> at the <a target="_blank" href="https://www.pnicube.it/">Premio Nazionale per l'Innovazione</a>
-                    </p>
-                </li> -->
-                <li>
-                    <p style="line-height:17px;">
-                        2022, <b class="b_title">Honorable Mention</b> at the <a target="_blank" href="https://github.com/vips4/tinyML_contest_iccad2022">ACM/IEEE ICCAD TinyML Design Contest</a>
-                    </p>
-                </li>
-                <li>
-                    <p style="line-height:17px;">
-                        2016 - 2021, <b class="b_title">Student Excellence Grant</b> by the University of Verona
-                    </p>
+                    <span class="date">Aug 2025</span>
+                    <div>Joined the <b>Interdisciplinary Transformation University of Austria (IT:U)</b> as a Postdoctoral Researcher, working with Prof. Michele Magno.</div>
                 </li>
             </ul>
-        </div>
+        </section>
 
-        <!-- Service to the Scientific Community -->
-        <div class="panel">
-            <h2> ⚖️ Services to the Scientific Community</h2>
-            <ul>
+
+        <!-- ============================================================== -->
+        <!-- SELECTED PUBLICATIONS                                          -->
+        <!-- Wrap your own name in <span class="me">...</span>.             -->
+        <!-- Possible link labels: Paper, arXiv, Open access, Code,         -->
+        <!-- Project page. Leave out the ones you don't have.               -->
+        <!-- ============================================================== -->
+        <section id="publications" class="highlight-mint">
+            <h2>Selected publications</h2>
+
+            <ul class="timeline publications">
                 <li>
-                    <p style="line-height:17px;">
-                        2027, <b class="b_title">Technical Program Committee</b> at the Design, Automation and Test in Europe Conference (DATE)
-                    </p>
-                    <p style="line-height:17px;">
-                        2026, <b class="b_title">Special Session Organizer</b> at the IEEE Sensors Applications Symposium (IEEE SAS)
-                    </p>
-                    <p style="line-height:17px;">
-                        2025, <b class="b_title">Area Chair</b> at the 23rd International Conference on Image Analysis and Processing (ICIAP)
-                    </p>
-                    <p style="line-height:17px;">
-                        2025, <b class="b_title">Ph.D. Forum Chair</b> at the 3rd International Conference on Frontiers of Artificial Intelligence (FAIEMA)
-                    </p>
-                    <p style="line-height:17px;">
-                        2025, <b class="b_title">Technical Program Committee</b> at the International Conference on Omni-Layer Intelligent Systems (COINS)
-                    </p>
-                    <p style="line-height:17px;">
-                        2024, <b class="b_title">Technical Program Committee</b> at the Unifying Representations in Neural Models Workshop (UniReps) at NeurIPS
-                    </p>
+                    <span class="date">2026</span>
+                    <div>
+                        <p class="pub-title">Performance Analysis of Edge and In-Sensor AI Processors: A Comparative Review</p>
+                        <p class="pub-authors"><span class="me">L. Capogrosso</span>, P. Bonazzi, M. Magno</p>
+                        <p class="pub-venue">International Instrumentation and Measurement Technology Conference (I2MTC)</p>
+                        <p class="pub-links">
+                            <a href="https://arxiv.org/abs/2603.08725" target="_blank">arXiv</a>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <span class="date">2026</span>
+                    <div>
+                        <p class="pub-title">A Comprehensive Survey on Deep Learning-based Predictive Maintenance</p>
+                        <p class="pub-authors">U. Khan, D. Cheng, F. Setti, F. Fummi, M. Cristani, <span class="me">L. Capogrosso</span></p>
+                        <p class="pub-venue">ACM Transactions on Embedded Computing Systems</p>
+                        <p class="pub-links">
+                            <a href="https://dl.acm.org/doi/abs/10.1145/3732287" target="_blank">Paper</a>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <span class="date">2025</span>
+                    <div>
+                        <p class="pub-title">LO-SC: Local-only Split Computing for Accurate Deep Learning on Edge Devices</p>
+                        <p class="pub-authors"><span class="me">L. Capogrosso</span>, E. Fraccaroli, M. Cristani, F. Fummi, S. Chakraborty</p>
+                        <p class="pub-venue">International Conference on VLSI Design (VLSID)</p>
+                        <p class="pub-links">
+                            <a href="https://ieeexplore.ieee.org/abstract/document/10900702" target="_blank">Paper</a>
+                            <a href="https://iris.univr.it/bitstream/11562/1156847/1/OPEN_2024_VLSID_LO_SC_Local_only_Split_Computing_for_Accurate_Deep_Learning_on_Edge_Devices.pdf" target="_blank">Open access</a>
+                            <a href="https://github.com/intelligolabs/LO-SC" target="_blank">Code</a>
+                            <a href="https://intelligolabs.github.io/LO-SC/" target="_blank">Project page</a>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <span class="date">2024</span>
+                    <div>
+                        <p class="pub-title">MTL-Split: Multi-Task Learning for Edge Devices using Split Computing</p>
+                        <p class="pub-authors"><span class="me">L. Capogrosso</span>, E. Fraccaroli, S. Chakraborty, F. Fummi, M. Cristani</p>
+                        <p class="pub-venue">Design Automation Conference (DAC)</p>
+                        <p class="pub-links">
+                            <a href="https://dl.acm.org/doi/abs/10.1145/3649329.3655686" target="_blank">Paper</a>
+                            <a href="https://arxiv.org/abs/2407.05982" target="_blank">arXiv</a>
+                            <a href="https://github.com/intelligolabs/MTL-Split" target="_blank">Code</a>
+                            <a href="https://intelligolabs.github.io/MTL-Split/" target="_blank">Project page</a>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <span class="date">2024</span>
+                    <div>
+                        <p class="pub-title">A Machine Learning-oriented Survey on Tiny Machine Learning</p>
+                        <p class="pub-authors"><span class="me">L. Capogrosso</span>, F. Cunico, D. S. Cheng, F. Fummi, M. Cristani</p>
+                        <p class="pub-venue">IEEE Access</p>
+                        <p class="pub-links">
+                            <a href="https://ieeexplore.ieee.org/document/10433185" target="_blank">Paper</a>
+                            <a href="https://arxiv.org/abs/2309.11932" target="_blank">arXiv</a>
+                        </p>
+                    </div>
                 </li>
             </ul>
-        </div>
 
-        <!-- Teaching -->
-        <div class="panel">
-            <h2> 🎒 Teaching</h2>
-            <ul>
+            <p class="publications-more">
+                Full list on <a href="https://scholar.google.it/citations?hl=it&user=sVTnbPYAAAAJ" target="_blank">Google Scholar</a> →
+            </p>
+        </section>
+
+
+        <!-- ============================================================== -->
+        <!-- HONORS & AWARDS                                                -->
+        <!-- ============================================================== -->
+        <section id="awards" class="highlight-peach">
+            <h2>Honors &amp; awards</h2>
+
+            <ul class="timeline">
                 <li>
-                    <p style="line-height:17px;">
-                        AY 2025 - 2026 <b class="b_title">Physical AI in the Space Domain</b> (Lecturer)
-                        <br>
-                        <span style="font-size:90%">Master's degree in Science Interdisciplinary Computing at the Interdisciplinary Transformation University of Austria (IT:U)</span>
-                    </p>
+                    <span class="date">2026</span>
+                    <div>
+                        <b>Ph.D. Outstanding Dissertation Award</b> —
+                        <a href="https://www.edaa.com/edaa-outstanding-dissertation-award/" target="_blank">European Design and Automation Association (EDAA)</a>
+                    </div>
                 </li>
                 <li>
-                    <p style="line-height:17px;">
-                        AY 2024 - 2025, <b class="b_title">Topics on Computer Architecture and Operating Systems</b> (TA)
-                        <br>
-                        <span style="font-size:90%">Bachelor's degree in Computer Science at the University of Verona</span>
-                    </p>
+                    <span class="date">2026</span>
+                    <div>
+                        <b>Best Paper Award</b> —
+                        <a href="https://www.metroautomotive.org/" target="_blank">IEEE International Workshop on Metrology for Automotive</a>
+                    </div>
                 </li>
                 <li>
-                    <p style="line-height:17px;">
-                        AY 2023 - 2025, <b class="b_title">Hardware Components Design on FPGA</b> (TA)
-                        <br>
-                        <span style="font-size:90%">Bachelor's degree in Computer Science at the University of Verona</span>
-                    </p>
+                    <span class="date">2026</span>
+                    <div>
+                        <b>Outstanding Reviewer</b> —
+                        <a href="https://eccv.ecva.net/Conferences/2026/ProgramCommittee#outstanding-reviewer" target="_blank">European Conference on Computer Vision (ECCV)</a>
+                    </div>
                 </li>
                 <li>
-                    <p style="line-height:17px;">
-                        AY 2023 - 2024, <b class="b_title">Systems Design Laboratory</b> (TA)
-                        <br>
-                        <span style="font-size:90%">Master's degree in Computer Engineering for Robotics and Smart Industry at the University of Verona</span>
-                    </p>
+                    <span class="date">2025</span>
+                    <div>
+                        <b>Outstanding Reviewer</b> —
+                        <a href="https://cvpr.thecvf.com/Conferences/2025/ProgramCommittee#all-outstanding-reviewer" target="_blank">IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</a>
+                    </div>
                 </li>
                 <li>
-                    <p style="line-height:17px;">
-                        AY 2022 - 2023, <b class="b_title">Machine Learning & Artificial Intelligence</b> (TA)
-                        <br>
-                        <span style="font-size:90%">Master's degree in Computer Engineering for Robotics and Smart Industry at the University of Verona</span>
-                    </p>
+                    <span class="date">2022</span>
+                    <div>
+                        <b>Honorable Mention</b> —
+                        <a href="https://github.com/vips4/tinyML_contest_iccad2022" target="_blank">ACM/IEEE ICCAD TinyML Design Contest</a>
+                    </div>
                 </li>
                 <li>
-                    <p style="line-height:17px;">
-                        AY 2022 - 2023, <b class="b_title">Computer Vision & Deep Learning</b> (TA)
-                        <br>
-                        <span style="font-size:90%">Master's degree in Artificial intelligence at the University of Verona</span>
-                    </p>
-                </li>
-                <li>
-                    <p style="line-height:17px;">
-                        AY 2022 - 2023, <b class="b_title">Signal and Image Processing</b> (TA)
-                        <br>
-                        <span style="font-size:90%">Bachelor's degree in Computer Science at the University of Verona</span>
-                    </p>
-                </li>
-                <li>
-                    <p style="line-height:17px;">
-                        AY 2020 - 2021, <b class="b_title">Network Programming and Security</b> (TA)
-                        <br>
-                        <span style="font-size:90%">Bachelor's degree in Computer Science at the University of Verona</span>
-                    </p>
-                </li>
-                <li>
-                    <p style="line-height:17px;">
-                        AY 2020 - 2021, <b class="b_title">Topics of Operating Systems and Networks</b> (TA)
-                        <br>
-                        <span style="font-size:90%">Bachelor's degree in Bioinformatics at the University of Verona</span>
-                    </p>
-                </li>
-                <li>
-                    <p style="line-height:17px;">
-                        AY 2020 - 2021, <b class="b_title">Programming I</b> (TA)
-                        <br>
-                        <span style="font-size:90%">Bachelor's degree in Computer Science at the University of Verona</span>
-                    </p>
+                    <span class="date">2016 – 2021</span>
+                    <div>
+                        <b>Student Excellence Grant</b> — University of Verona
+                    </div>
                 </li>
             </ul>
-        </div>
+        </section>
 
-        <!-- Presentations -->
-        <div class="panel">
-            <h2> 📆 Presentations</h2>
-            <ul>
+
+        <!-- ============================================================== -->
+        <!-- TEACHING: dates are academic years                             -->
+        <!-- ============================================================== -->
+        <section id="teaching" class="highlight-sky">
+            <h2>Teaching</h2>
+
+            <h3>Lecturer</h3>
+            <ul class="timeline">
                 <li>
-                    <p style="line-height:17px;">
-                        <b class="b_title">Machine Learning at the Edge with ARM: A Practical Introduction</b>
-                        <br>
-                        <span style="font-size:90%">
-                            "<a target="_blank" href="https://chipsacademy.eu/summer-school-2025/">ECS (European Chips Skills Academy) Summer School</a>"
-                        </span>
-                        <br>
-                        <span style="font-size:90%">
-                            2025, Budapest University of Technology and Economics
-                        </span>
-                    </p>
+                    <span class="date">2025 – 26</span>
+                    <div>
+                        <b>Physical AI in the Space Domain</b>
+                        <span class="detail">M.Sc. in Interdisciplinary Computing · IT:U</span>
+                    </div>
                 </li>
-                <li>
-                    <p style="line-height:17px;">
-                        <b class="b_title">A Machine Learning-oriented Overview on Tiny Machine Learning: Theory, Methods and Applications</b>
-                        <br>
-                        <span style="font-size:90%">
-                            "Workshop on Machine Learning on Low-Power Devices: Applications and Advanced Topics"
-                        </span>
-                        <br>
-                        <span style="font-size:90%">
-                            2024, International Centre for Theoretical Physics (ICTP)
-                        </span>
-                    </p>
-                </li>
-                <li>
-                    <p style="line-height:17px;">
-                        <b class="b_title">Enabling Machine Learning Systems in Industry 4.0</b>
-                        <br>
-                        <span style="font-size:90%">
-                            "How to Leverage Artificial Intelligence to Grow Your Business: The <a target="_blank" href="https://www.sys-datgroup.com/humatics/">Humatics SYS-DAT Group</a> Workshop"
-                        </span>
-                        <br>
-                        <span style="font-size:90%">
-                            2023, Department of Computer Science of the University of Verona
-                        </span>
-                    </p>
-                </li>
-                <!-- <li>
-                    <p style="line-height:17px;">
-                        <b class="b_title">TinyML: How to Fit Heavy Networks Almost Everywhere</b>
-                        <br>
-                        <span style="font-size:90%">
-                            "A Holistic Approach to Computer Engineering for Industry 4.0 Workshop"
-                        </span>
-                        <br>
-                        <span style="font-size:90%">
-                            2023, Department of Engineering for Innovation Medicine of the University of Verona
-                        </span>
-                    </p>
-                </li> -->
-                <!-- <li>
-                    <p style="line-height:17px;">
-                        <b class="b_title">The DOHMO Project: What is There and What is Missing</b>
-                        <br>
-                        <span style="font-size:90%">
-                            "Embedded Computer Vision" workshop
-                        </span>
-                        <br>
-                        <span style="font-size:90%">
-                            2022, Department of Computer Science of the University of Verona
-                        </span>
-                    </p>
-                </li> -->
             </ul>
-        </div>
 
-        <!-- Contacts -->
-        <div class="panel">
-            <h2> 💻 Contacts</h2>
-            <ul>
+            <h3>Teaching assistant · University of Verona</h3>
+            <ul class="timeline">
                 <li>
+                    <span class="date">2024 – 25</span>
+                    <div>
+                        <b>Topics on Computer Architecture and Operating Systems</b>
+                        <span class="detail">B.Sc. in Computer Science</span>
+                    </div>
+                </li>
+                <li>
+                    <span class="date">2023 – 25</span>
+                    <div>
+                        <b>Hardware Components Design on FPGA</b>
+                        <span class="detail">B.Sc. in Computer Science</span>
+                    </div>
+                </li>
+                <li>
+                    <span class="date">2023 – 24</span>
+                    <div>
+                        <b>Systems Design Laboratory</b>
+                        <span class="detail">M.Sc. in Computer Engineering for Robotics and Smart Industry</span>
+                    </div>
+                </li>
+                <li>
+                    <span class="date">2022 – 23</span>
+                    <div>
+                        <b>Machine Learning &amp; Artificial Intelligence</b>
+                        <span class="detail">M.Sc. in Computer Engineering for Robotics and Smart Industry</span>
+                    </div>
+                </li>
+                <li>
+                    <span class="date">2022 – 23</span>
+                    <div>
+                        <b>Computer Vision &amp; Deep Learning</b>
+                        <span class="detail">M.Sc. in Artificial Intelligence</span>
+                    </div>
+                </li>
+                <li>
+                    <span class="date">2022 – 23</span>
+                    <div>
+                        <b>Signal and Image Processing</b>
+                        <span class="detail">B.Sc. in Computer Science</span>
+                    </div>
+                </li>
+                <li>
+                    <span class="date">2020 – 21</span>
+                    <div>
+                        <b>Network Programming and Security</b>
+                        <span class="detail">B.Sc. in Computer Science</span>
+                    </div>
+                </li>
+                <li>
+                    <span class="date">2020 – 21</span>
+                    <div>
+                        <b>Topics of Operating Systems and Networks</b>
+                        <span class="detail">B.Sc. in Bioinformatics</span>
+                    </div>
+                </li>
+                <li>
+                    <span class="date">2020 – 21</span>
+                    <div>
+                        <b>Programming I</b>
+                        <span class="detail">B.Sc. in Computer Science</span>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+
+        <!-- ============================================================== -->
+        <!-- INVITED TALKS                                                  -->
+        <!-- ============================================================== -->
+        <section id="talks" class="highlight-lilac">
+            <h2>Invited talks</h2>
+
+            <ul class="timeline">
+                <li>
+                    <span class="date">2025</span>
+                    <div>
+                        <b>Machine Learning at the Edge with ARM: A Practical Introduction</b>
+                        <span class="detail">
+                            <a href="https://chipsacademy.eu/summer-school-2025/" target="_blank">ECS (European Chips Skills Academy) Summer School</a>
+                            · Budapest University of Technology and Economics
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <span class="date">2024</span>
+                    <div>
+                        <b>A Machine Learning-oriented Overview on Tiny Machine Learning: Theory, Methods and Applications</b>
+                        <span class="detail">
+                            Workshop on Machine Learning on Low-Power Devices: Applications and Advanced Topics
+                            · International Centre for Theoretical Physics (ICTP)
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <span class="date">2023</span>
+                    <div>
+                        <b>Enabling Machine Learning Systems in Industry 4.0</b>
+                        <span class="detail">
+                            <a href="https://www.sys-datgroup.com/humatics/" target="_blank">Humatics SYS-DAT Group</a> Workshop
+                            · Department of Computer Science, University of Verona
+                        </span>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+
+        <!-- ============================================================== -->
+        <!-- SERVICE: committees and reviewing                              -->
+        <!-- ============================================================== -->
+        <section id="service" class="highlight-mint">
+            <h2>Service</h2>
+
+            <h3>Organization &amp; program committees</h3>
+            <ul class="timeline">
+                <li>
+                    <span class="date">2027</span>
+                    <div><b>Technical Program Committee</b> — Design, Automation and Test in Europe Conference (DATE)</div>
+                </li>
+                <li>
+                    <span class="date">2026</span>
+                    <div><b>Special Session Organizer</b> — IEEE Sensors Applications Symposium (SAS)</div>
+                </li>
+                <li>
+                    <span class="date">2025</span>
+                    <div><b>Area Chair</b> — International Conference on Image Analysis and Processing (ICIAP)</div>
+                </li>
+                <li>
+                    <span class="date">2025</span>
+                    <div><b>Ph.D. Forum Chair</b> — International Conference on Frontiers of Artificial Intelligence (FAIEMA)</div>
+                </li>
+                <li>
+                    <span class="date">2025</span>
+                    <div><b>Technical Program Committee</b> — International Conference on Omni-Layer Intelligent Systems (COINS)</div>
+                </li>
+                <li>
+                    <span class="date">2024</span>
+                    <div><b>Technical Program Committee</b> — UniReps Workshop at NeurIPS</div>
+                </li>
+            </ul>
+
+            <!-- Reviewing: name on the left, years on the right -->
+            <h3>Reviewing · Journals</h3>
+            <ul class="review-list">
+                <li>IEEE Sensors Journal <span>2026</span></li>
+                <li>International Journal of Computer Vision <span>since 2023</span></li>
+                <li>IEEE Internet of Things Journal <span>since 2023</span></li>
+                <li>Future Generation Computer Systems <span>since 2023</span></li>
+                <li>Pattern Recognition <span>since 2022</span></li>
+            </ul>
+
+            <h3>Reviewing · Conferences</h3>
+            <ul class="review-list">
+                <li>Conference on Neural Information Processing Systems (NeurIPS) <span>2026</span></li>
+                <li>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) <span>since 2024</span></li>
+                <li>European Conference on Computer Vision (ECCV) <span>since 2024</span></li>
+                <li>International Conference on Learning Representations (ICLR) <span>since 2023</span></li>
+            </ul>
+        </section>
+
+
+        <!-- ============================================================== -->
+        <!-- CONTACT: e-mails are written out on purpose to avoid spam bots -->
+        <!-- ============================================================== -->
+        <section id="contact" class="highlight-peach">
+            <h2>Contact</h2>
+
+            <div class="contact-cards">
+                <div class="contact-card contact-card-primary">
+                    <p class="contact-label">Primary</p>
+                    <p class="contact-org">Interdisciplinary Transformation University of Austria (IT:U)</p>
                     <p>
-                        <b class="b_title">Interdisciplinary Transformation University of Austria (IT:U)</b> (primary)
-                        <br>
-                        <i class="fa fa-envelope" aria-hidden="true" style="color: #292c33;"></i>
+                        <svg class="icon"><use href="#icon-mail"/></svg>
                         luigi [dot] capogrosso [at] it-u [dot] at
-                        <br>
-                        <i class="fas fa-map-marker-alt" aria-hidden="true" style="color: #292c33;"></i>
-                        <a target="_blank" href="https://maps.app.goo.gl/jg8nCPiZVe9B1BwC9">Freistädter Straße 400, 4040, Linz, Austria</a><br>
                     </p>
-                </li>
-                <li>
                     <p>
-                        <b class="b_title">University of Verona</b> (secondary)
-                        <br>
-                        <i class="fa fa-envelope" aria-hidden="true" style="color: #292c33;"></i>
-                        luigi [dot] capogrosso [at] univr [dot] it
-                        <br>
-                        <i class="fas fa-map-marker-alt" aria-hidden="true" style="color: #292c33;"></i>
-                        <a target="_blank" href="https://goo.gl/maps/zvkmapvTFwAivXH8A">Str. le Grazie 15, 37134, Verona, Italy</a><br>
+                        <svg class="icon"><use href="#icon-pin"/></svg>
+                        <a href="https://maps.app.goo.gl/jg8nCPiZVe9B1BwC9" target="_blank">Freistädter Straße 400, 4040 Linz, Austria</a>
                     </p>
-                </li>
-                <!-- <li>
-                    <p>
-                        <b class="b_title">Polytechnic of Turin</b>
-                        <br>
-                        <i class="fa fa-envelope" aria-hidden="true" style="color: #292c33;"></i>
-                        luigi [dot] capogrosso [at] polito [dot] it
-                    </p>
-                </li> -->
-            </ul>
-        </div>
+                </div>
 
-        <!-- Footer -->
-        <footer>
-            <hr />
-            © <a href="https://capogrosso.eu">Luigi Capogrosso</a> 2026
-        </footer>
-    </body>
+                <div class="contact-card">
+                    <p class="contact-label">Secondary</p>
+                    <p class="contact-org">University of Verona</p>
+                    <p>
+                        <svg class="icon"><use href="#icon-mail"/></svg>
+                        luigi [dot] capogrosso [at] univr [dot] it
+                    </p>
+                    <p>
+                        <svg class="icon"><use href="#icon-pin"/></svg>
+                        <a href="https://goo.gl/maps/zvkmapvTFwAivXH8A" target="_blank">Strada le Grazie 15, 37134 Verona, Italy</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- ================================================================== -->
+    <!-- FOOTER: remember to update "Last updated" when you edit the page   -->
+    <!-- ================================================================== -->
+    <footer>
+        <div class="container">
+            <span>© 2026 Luigi Capogrosso</span>
+            <span>Last updated: November 2026 · <a href="#top">Back to top ↑</a></span>
+        </div>
+    </footer>
+
+</body>
 
 </html>

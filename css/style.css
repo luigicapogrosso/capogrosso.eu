@@ -1,131 +1,525 @@
+/* ==========================================================================
+   capogrosso.eu — stylesheet
+
+   Contents
+     1. Colors and fonts
+     2. Base elements
+     3. Layout container
+     4. Top bar
+     5. Hero
+     6. Sections and headings
+     7. Timeline lists (news, awards, teaching, talks, service)
+     8. Publications
+     9. Reviewing list
+    10. Contact cards
+    11. Footer
+    12. Small screens
+    13. Print
+   ========================================================================== */
+
+
+/* 1. Colors and fonts
+   -------------------------------------------------------------------------- */
+
+:root {
+    /* Text and lines */
+    --text: #23252b;          /* main text */
+    --text-muted: #61666f;    /* secondary text */
+    --text-faint: #8b8f97;    /* dates, small labels */
+    --line: #ebe7df;          /* borders and separators */
+
+    /* Pastel colors (used for heading markers, hovers and highlights) */
+    --lilac: #ebe5f8;
+    --lilac-dark: #5b4a9e;
+    --peach: #fde6d8;
+    --mint: #daf1e6;
+    --butter: #fbf1c9;
+    --sky: #deeefa;
+
+    /* Fonts */
+    --font-text: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --font-title: "Source Serif 4", Georgia, "Times New Roman", serif;
+
+    /* Sizes */
+    --page-width: 760px;      /* max width of the content */
+    --date-width: 6.5rem;     /* width of the date column in timelines */
+}
+
+
+/* 2. Base elements
+   -------------------------------------------------------------------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    margin: auto;
-    padding: 1em;
-    color: #666;
-    font-size: 12pt;
-    max-width: 800px;
+    margin: 0;
+    background: #ffffff;
+    color: var(--text);
+    font-family: var(--font-text);
+    font-size: 16px;
     line-height: 1.6;
-    font-family: "Lato";
-    text-align: justify;
 }
 
-footer {
-    text-align: center;
-    padding-top: 3px;
+p {
+    margin: 0 0 0.9em;
 }
 
-hr {
-    color: #ddd;
-    border-style: dashed;
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
+/* Links: dark text with a lilac underline */
 a {
-    color: #043cbe;
-    text-decoration: none;
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: #c9bcef;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
 }
 
 a:hover {
-    text-decoration: underline;
+    background: var(--lilac);
+    text-decoration-color: var(--lilac-dark);
 }
 
-h1 {
-    color: #292c33;
+/* Inline SVG icons (see the icon list at the top of index.html) */
+.icon {
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    fill: currentColor;
 }
 
-h4 {
-    margin: 0;
+
+/* 3. Layout container
+   -------------------------------------------------------------------------- */
+
+.container {
+    max-width: var(--page-width);
+    margin: 0 auto;
+    padding: 0 1.25rem;
 }
 
-ul,
-ol {
-    margin: 0;
-    padding-left: 1.2em;
-    list-style-type: none;
+
+/* 4. Top bar
+   -------------------------------------------------------------------------- */
+
+.topbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--line);
 }
 
-div.personal {
+.topbar .container {
+    display: flex;
+    align-items: center;
+    height: 3.25rem;
+}
+
+.topbar-name {
+    font-family: var(--font-title);
+    font-size: 1.05rem;
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.topbar-name:hover {
+    background: none;
+}
+
+.topbar nav {
+    display: flex;
+    gap: 0.25rem;
+    margin-left: auto;
+    overflow-x: auto;           /* the menu scrolls sideways on small screens */
+    scrollbar-width: none;
+}
+
+.topbar nav a {
+    padding: 0.3rem 0.6rem;
+    border-radius: 999px;
+    color: var(--text-muted);
+    font-size: 0.875rem;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.topbar nav a:hover {
+    color: var(--text);
+}
+
+
+/* 5. Hero
+   -------------------------------------------------------------------------- */
+
+.hero {
     display: grid;
-    grid-template-columns: auto auto;
-    grid-column-gap: 1.4em;
-    grid-auto-flow: dense;
+    grid-template-columns: 1fr auto;    /* text on the left, photo on the right */
+    gap: 2.5rem;
+    align-items: center;
+    padding: 4rem 0 2.5rem;
 }
 
-div.personal>div:nth-child(1) {
-    grid-column: 2;
-    text-align: center;
-    padding-top: 1.5em;
+.hero h1 {
+    margin: 0 0 0.5rem;
+    font-family: var(--font-title);
+    font-size: 2.9rem;
+    font-weight: 600;
+    line-height: 1.1;
 }
 
-@media only screen and (max-width: 600px) {
-    div.personal {
-        display: block;
-    }
-
-    div.personal>div:nth-child(1) {
-        padding: 0;
-    }
+.hero-role {
+    margin-bottom: 1.1rem;
+    color: var(--text-muted);
+    font-size: 1.05rem;
 }
 
-div.myphoto {
+.hero-summary {
+    margin-bottom: 1.5rem;
+    font-family: var(--font-title);
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.hero-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.hero-photo {
+    width: 180px;
+    height: 180px;
+    margin: 12px;
+    border-radius: 50%;
+    object-fit: cover;
+    /* two thin pastel rings around the photo */
+    box-shadow: 0 0 0 6px #ffffff, 0 0 0 9px var(--peach), 0 0 0 12px var(--lilac);
+}
+
+/* Rounded buttons (CV, Google Scholar, GitHub, LinkedIn) */
+.button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.38rem 0.8rem;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.button:hover {
+    border-color: var(--lilac);
+}
+
+.button-dark {
+    border-color: var(--text);
+    background: var(--text);
+    color: #ffffff;
+}
+
+.button-dark:hover {
+    border-color: var(--lilac-dark);
+    background: var(--lilac-dark);
+}
+
+
+/* 6. Sections and headings
+   -------------------------------------------------------------------------- */
+
+section {
+    padding: 2.25rem 0 1rem;
+    border-top: 1px solid var(--line);
+    scroll-margin-top: 3.5rem;      /* keeps the heading visible below the top bar */
+}
+
+/* Section title with a pastel "highlighter" stroke behind it */
+section h2 {
     display: inline-block;
-    width: 175px;
-    height: 175px;
-    border: 2px solid;
-    border-color: #292c33;
-    border-radius: 100px;
-    background: url(../img/me.jpg) no-repeat center;
-    background-size: 180px;
+    margin: 0 0 1.25rem;
+    padding: 0 0.15em;
+    font-family: var(--font-title);
+    font-size: 1.55rem;
+    font-weight: 600;
+    line-height: 1.2;
+    background: linear-gradient(transparent 58%, var(--highlight) 58%, var(--highlight) 92%, transparent 92%);
 }
 
-.social {
+/* Color of the highlighter, chosen with a class on <section> */
+.highlight-lilac  { --highlight: var(--lilac); }
+.highlight-peach  { --highlight: var(--peach); }
+.highlight-mint   { --highlight: var(--mint); }
+.highlight-butter { --highlight: var(--butter); }
+.highlight-sky    { --highlight: var(--sky); }
+
+/* Small uppercase sub-heading inside a section */
+section h3 {
+    margin: 1.5rem 0 0.6rem;
+    color: var(--text-faint);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+
+/* 7. Timeline lists (date on the left, content on the right)
+   -------------------------------------------------------------------------- */
+
+.timeline li {
+    display: grid;
+    grid-template-columns: var(--date-width) 1fr;
+    gap: 1rem;
+    padding: 0.55rem 0;
+}
+
+.timeline li + li {
+    border-top: 1px dashed var(--line);
+}
+
+.date {
+    padding-top: 0.1em;
+    color: var(--text-faint);
+    font-size: 0.875rem;
+    white-space: nowrap;
+}
+
+/* Second line of an item (degree, venue, ...) */
+.detail {
     display: block;
-    font-size: 1em;
+    color: var(--text-muted);
+    font-size: 0.9rem;
 }
 
-.social a {
-    color: #292c33;
+
+/* 8. Publications
+   -------------------------------------------------------------------------- */
+
+.publications li {
+    padding: 1rem 0;
 }
 
-.social a:hover {
-    color: #043cbe;
-    background-color: #f7f7f7;
+.pub-title {
+    margin-bottom: 0.3rem;
+    font-family: var(--font-title);
+    font-size: 1.12rem;
+    font-weight: 600;
+    line-height: 1.35;
 }
 
-.panel {
-    display: block;
-    font-size: 0.9em;
-    margin: 0 0 1em 0;
+.pub-authors,
+.pub-venue {
+    margin-bottom: 0.3rem;
+    color: var(--text-muted);
+    font-size: 0.93rem;
 }
 
-.panel {
-    border: 1px solid #292c33;
-    border-radius: 4px;
-    background: #f7f7f7;
-    padding: 2px 7px;
+/* Your own name in the author list */
+.me {
+    color: var(--text);
+    font-weight: 600;
+    background: linear-gradient(transparent 60%, var(--peach) 60%);
 }
 
-.panel>h2 {
-    color: #f7f7f7;
-    padding: 2px 7px;
-    margin: -2px -7px 0.3em -7px;
-    background: #292c33;
-    font-size: 1.2em;
+.pub-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin: 0.5rem 0 0;
 }
 
-.b_title {
-    color: #292c33;
+.pub-links a {
+    padding: 0.12rem 0.55rem;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-decoration: none;
 }
 
-.reviewer_ul {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+.pub-links a:hover {
+    border-color: var(--lilac);
+    color: var(--text);
 }
 
-.reviewer_li {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+.publications-more {
+    margin-top: 1rem;
+    padding-left: calc(var(--date-width) + 1rem);   /* aligned with the titles */
+    font-weight: 500;
+}
+
+
+/* 9. Reviewing list (name on the left, years on the right)
+   -------------------------------------------------------------------------- */
+
+.review-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    padding: 0.3rem 0;
+}
+
+.review-list li + li {
+    border-top: 1px dashed var(--line);
+}
+
+.review-list span {
+    color: var(--text-faint);
+    font-size: 0.85rem;
+    white-space: nowrap;
+}
+
+
+/* 10. Contact cards
+   -------------------------------------------------------------------------- */
+
+.contact-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.contact-card {
+    padding: 1.1rem 1.2rem;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+}
+
+.contact-card p {
+    display: flex;
+    gap: 0.55rem;
+    align-items: baseline;
+    margin-bottom: 0.35rem;
+    color: var(--text-muted);
+    font-size: 0.92rem;
+}
+
+.contact-card .icon {
+    position: relative;
+    top: 0.15em;
+}
+
+.contact-card-primary {
+    border-color: var(--lilac);
+    background: var(--lilac);
+}
+
+.contact-card-primary p {
+    color: var(--text);
+}
+
+.contact-card .contact-label {
+    margin-bottom: 0.3rem;
+    color: var(--text-faint);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.contact-card .contact-org {
+    margin-bottom: 0.6rem;
+    color: var(--text);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.35;
+}
+
+
+/* 11. Footer
+   -------------------------------------------------------------------------- */
+
+footer {
+    margin-top: 2.5rem;
+    padding: 1.5rem 0 3rem;
+    border-top: 1px solid var(--line);
+    color: var(--text-faint);
+    font-size: 0.85rem;
+}
+
+footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+
+/* 12. Small screens (phones)
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 680px) {
+
+    /* Top bar: hide the name, let the menu fade out on the right */
+    .topbar-name {
+        display: none;
+    }
+
+    .topbar nav {
+        margin-left: 0;
+        mask-image: linear-gradient(90deg, #000 85%, transparent);
+    }
+
+    /* Hero: photo on top, everything in one column */
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding-top: 2.5rem;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-photo {
+        order: -1;
+        width: 128px;
+        height: 128px;
+    }
+
+    /* Timelines: date above the content */
+    .timeline li {
+        grid-template-columns: 1fr;
+        gap: 0.1rem;
+    }
+
+    .publications-more {
+        padding-left: 0;
+    }
+
+    .contact-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* 13. Print
+   -------------------------------------------------------------------------- */
+
+@media print {
+    .topbar,
+    .hero-links,
+    .pub-links {
+        display: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
 }
