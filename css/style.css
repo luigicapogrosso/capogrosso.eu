@@ -35,6 +35,9 @@
     --mint: #daf1e6;
     --butter: #fbf1c9;
     --sky: #deeefa;
+    --blue: #d8e6fb;          /* pastel blue: link hover, menu hover, primary contact card */
+    --blue-line: #b5cdf6;     /* link underline */
+    --blue-dark: #2f5fae;     /* link underline on hover */
 
     /* Fonts */
     --font-text: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
@@ -76,18 +79,18 @@ ul {
     list-style: none;
 }
 
-/* Links: dark text with a lilac underline */
+/* Links: dark text with a blue underline */
 a {
     color: inherit;
     text-decoration: underline;
-    text-decoration-color: #c9bcef;
+    text-decoration-color: var(--blue-line);
     text-decoration-thickness: 2px;
     text-underline-offset: 3px;
 }
 
 a:hover {
-    background: var(--lilac);
-    text-decoration-color: var(--lilac-dark);
+    background: var(--blue);
+    text-decoration-color: var(--blue-dark);
 }
 
 /* Inline SVG icons (see the icon list at the top of index.html) */
@@ -157,6 +160,7 @@ a:hover {
 }
 
 .topbar nav a:hover {
+    background: var(--blue);
     color: var(--text);
 }
 
@@ -416,8 +420,8 @@ section h3 {
 }
 
 .contact-card-primary {
-    border-color: var(--lilac);
-    background: var(--lilac);
+    border-color: var(--blue);
+    background: var(--blue);
 }
 
 .contact-card-primary p {
