@@ -270,6 +270,45 @@ section h2 {
 .highlight-butter { --highlight: var(--butter); }
 .highlight-sky    { --highlight: var(--sky); }
 
+/* Banner for students and researchers (end of the About section) */
+.banner {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    margin-top: 1.5rem;
+    padding: 1.1rem 1.25rem;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+}
+
+.banner-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    padding: 0.55rem;
+    border-radius: 50%;
+    background: var(--blue);
+    color: var(--blue-dark);
+}
+
+.banner p {
+    margin-bottom: 0.5rem;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+.banner .banner-title {
+    margin-bottom: 0.2rem;
+    color: var(--text);
+    font-family: var(--font-title);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.banner-link {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
 /* Small uppercase sub-heading inside a section */
 section h3 {
     margin: 1.5rem 0 0.6rem;
